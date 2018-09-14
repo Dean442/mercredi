@@ -18,4 +18,6 @@ cd /vagrant/website
 bundle install
 
 
+rake db:create
+
 
