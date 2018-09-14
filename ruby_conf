@@ -1,0 +1,21 @@
+#!/bin/bash -l
+
+rvm install ruby
+rvm --default use ruby
+
+
+#node
+sudo apt-get install -y nodejs && sudo ln -sf /usr/bin/nodejs /usr/local/bin/node
+
+
+rvm all do gem install bundler
+rvm all do gem install rails
+rvm all do gem install mysql2
+
+
+cd /vagrant/website
+
+bundle install
+
+
+

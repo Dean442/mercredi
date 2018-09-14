@@ -1,0 +1,5 @@
+
+
+cd /vagrant/website
+
+rvmsudo bundle exec passenger start
