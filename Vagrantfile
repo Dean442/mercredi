@@ -68,6 +68,6 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", path: "./ruby_conf", privileged: false
 
-  config.vm.provision "shell", path: "./passenger_conf"
+  config.vm.provision "shell", path: "./passenger_conf", run: "always"
   
 end
